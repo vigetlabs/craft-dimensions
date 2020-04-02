@@ -1,0 +1,40 @@
+{
+    "name": "viget/craft-dimensions",
+    "description": "Replicate the Craft Commerce Dimensions fields as a standalone field type.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "dimensions"
+    ],
+    "support": {
+        "docs": "https://github.com/vigetlabs/craft-dimensions/blob/master/README.md",
+        "issues": "https://github.com/vigetlabs/craft-dimensions/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Trevor Davis",
+            "homepage": "https://www.viget.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "viget\\dimensions\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Dimensions",
+        "handle": "dimensions",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "",
+        "class": "viget\\dimensions\\Dimensions"
+    }
+}

@@ -1,0 +1,54 @@
+{% from '_includes/forms' import text, textField %}
+
+{% set dimensionUnit = field.dimensionUnit %}
+{% set weightUnit = field.weightUnit %}
+
+{% if dimensionUnit %}
+    <div class="flex">
+        <div class="textwrapper">
+            {{ text({
+                id: id,
+                name: name ~ '[width]',
+                value: values.width,
+                placeholder: 'Width' | t | upper[0:1],
+                title: 'Width' | t,
+                unit: dimensionUnit,
+            }) }}
+        </div>
+        <div class="label light">/</div>
+        <div class="textwrapper">
+            {{ text({
+                id: id ~ 'height',
+                name: name ~ '[height]',
+                value: values.height,
+                placeholder: 'Height' | t | upper[0:1],
+                title: 'Height' | t,
+                unit: dimensionUnit,
+            }) }}
+        </div>
+        <div class="label light">/</div>
+        <div class="textwrapper">
+            {{ text({
+                id: id ~ 'depth',
+                name: name ~ '[depth]',
+                value: values.depth,
+                placeholder: 'Depth' | t | upper[0:1],
+                title: 'Depth' | t,
+                unit: dimensionUnit,
+            }) }}
+        </div>
+        <div class="label light">{{ dimensionUnit }}</div>
+    </div>
+{% endif %}
+
+{% if weightUnit %}
+    {{ textField({
+        id: id ~ 'weight',
+        label: 'Weight' | t,
+        name: name ~ '[weight]',
+        value: values.weight,
+        placeholder: 'Enter weight' | t,
+        unit: weightUnit,
+    }) }}
+{% endif %}
+
