@@ -1,0 +1,15 @@
+{% from '_includes/forms' import selectField %}
+
+{{ selectField({
+    label: 'Dimension Unit' | t,
+    name: 'dimensionUnit',
+    value: field['dimensionUnit'],
+    options: dimensionUnits,
+}) }}
+
+{{ selectField({
+    label: 'Weight Unit' | t,
+    name: 'weightUnit',
+    value: field['weightUnit'],
+    options: weightUnits,
+}) }}
