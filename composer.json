@@ -34,7 +34,7 @@
         "handle": "dimensions",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "",
+        "changelogUrl": "https://raw.githubusercontent.com/vigetlabs/craft-dimensions/master/CHANGELOG.md",
         "class": "viget\\dimensions\\Dimensions"
     }
 }
