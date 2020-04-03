@@ -10,7 +10,7 @@
                 id: id,
                 name: name ~ '[width]',
                 value: values.width,
-                placeholder: 'Width' | t | upper[0:1],
+                placeholder: 'Width' | t | upper[:1],
                 title: 'Width' | t,
                 unit: dimensionUnit,
             }) }}
@@ -21,7 +21,7 @@
                 id: id ~ 'height',
                 name: name ~ '[height]',
                 value: values.height,
-                placeholder: 'Height' | t | upper[0:1],
+                placeholder: 'Height' | t | upper[:1],
                 title: 'Height' | t,
                 unit: dimensionUnit,
             }) }}
@@ -32,7 +32,7 @@
                 id: id ~ 'depth',
                 name: name ~ '[depth]',
                 value: values.depth,
-                placeholder: 'Depth' | t | upper[0:1],
+                placeholder: 'Depth' | t | upper[:1],
                 title: 'Depth' | t,
                 unit: dimensionUnit,
             }) }}

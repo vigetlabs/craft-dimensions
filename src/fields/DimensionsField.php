@@ -75,7 +75,7 @@ class DimensionsField extends Field implements PreviewableFieldInterface
      */
     public function normalizeValue($value, ElementInterface $element = null)
     {
-        if (empty($value)) return NULL;
+        if (empty($value)) return null;
         if (is_array($value)) return $value;
 
         return Json::decodeIfJson($value);
